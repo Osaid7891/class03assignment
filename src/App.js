@@ -2,23 +2,18 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function App({name}) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     Hello {name}!
+     <h2> I am learning React JS from Panacloud </h2>
+     <ul>
+      <li>Components</li>
+      <li>Hooks</li>
+      <li>States</li>
+      <li>Django Rest Framework</li>
+      <li><span> {5 + 20} </span> </li>
+     </ul>
     </div>
   );
 }
